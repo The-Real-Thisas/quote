@@ -15,10 +15,7 @@
   <meta property="twitter:title" content="Quote | Quote Generator">
   <meta property="twitter:description" content="Just Quotes.">
   <meta property="twitter:image" content="/logo.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./background.css">
-  <link rel="stylesheet" href="offline-theme-slide.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -33,33 +30,19 @@
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
-  <link rel="preconnect" href="https://api.quotable.io">
-  <link rel="preconnect" href="https://source.unsplash.com">
   <meta name="msapplication-TileColor" content="#2E3440">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#2E3440">
-  <script src="offline.min.js"></script>
-    <script type="text/javascript">
-    Offline.options = {
-    checkOnLoad: false,
-    interceptRequests: true,
-    reconnect: {
-        initialDelay: 3,
-        delay: 10
-    },
-    requests: true
-    };
-    </script>
 
 </head>
 <body>
+<!-- partial:index.partial.html -->
+<blockquote contenteditable="flase" class="blockquote"><q>Loading ...</q>
+  <cite></cite>
+  <button></button>
+</blockquote>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js'></script><script  src="./script.js"></script><script  src="./main.js"></script>
 
-    <div class="wrapper">
-        <div class="clip-text clip-text--cover blockquote magic"><q id="loaded-text" onclick="updateQuote(), renderItem()">Happy Birthday !</q><cite id="loaded-cite"></cite></div>
-        <button style="display: none;"></button>
-
-    </div>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="./background.js"></script><script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fitty.min.js"></script>
 </body>
 </html>

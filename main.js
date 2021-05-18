@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       quote.textContent = data.content;
       cite.textContent = data.author;
     } else {
-      quote.textContent = "An error occured";
+      quote.textContent = "Hmm something is wrong, sorry about that.</br> Happy birthday";
       console.log(data);
     }
   }
