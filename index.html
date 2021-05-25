@@ -50,12 +50,34 @@
     requests: true
     };
     </script>
+    <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+        $(function(){
+
+            var 
+                $online = $('.online'),
+                $offline = $('.offline');
+
+            Offline.on('confirmed-down', function () {
+                $online.fadeOut(function () {
+                    $offline.fadeIn();
+                });
+            });
+
+            Offline.on('confirmed-up', function () {
+                $offline.fadeOut(function () {
+                    $online.fadeIn();
+                });
+            });
+
+        });
+    </script>
 
 </head>
 <body>
 
     <div class="wrapper">
-        <div class="clip-text clip-text--cover blockquote magic"><q id="loaded-text" onclick="updateQuote(), renderItem()">Happy Birthday !</q><cite id="loaded-cite"></cite></div>
+        <div class="clip-text clip-text--cover blockquote magic"><q class="online "id="loaded-text" onclick="updateQuote(), renderItem()">Happy Birthday !!!</q><cite class="online" id="loaded-cite"></cite><q class="offline none" onclick="updateQuote(), renderItem()">Hmmm... It seems something went wrong. You might be offline so check your internet. In the meanwhile, <br>Happy Birthday bud <br>:)</q><cite class="offline none">Thisas</cite></div>
         <button style="display: none;"></button>
 
     </div>

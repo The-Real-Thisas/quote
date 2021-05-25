@@ -12,7 +12,7 @@ function renderItem(){
     // Your CSS as text
     var styles = `
         .magic {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${response.url});
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(${response.url});
         }
     `
     var styleSheet = document.createElement("style")
