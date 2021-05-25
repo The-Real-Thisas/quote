@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Quote | Quote Generator</title>
+  <meta name="title" content="Quote | Quote Generator">
+  <meta name="description" content="Just Quotes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thisas.dev/quote/">
+  <meta property="og:title" content="Quote | Quote Generator">
+  <meta property="og:description" content="Just Quotes.">
+  <meta property="og:image" content="./logo.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://thisas.dev/quote/">
+  <meta property="twitter:title" content="Quote | Quote Generator">
+  <meta property="twitter:description" content="Just Quotes.">
+  <meta property="twitter:image" content="./logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="msapplication-TileColor" content="#2E3440">
+  <meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
+  <meta name="theme-color" content="#2E3440">
+  <style>
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 95vh;
+  max-height: 100%;
+  background: #2E3440;
+  color: #E5E9F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+blockquote {
+  font-size: 3rem;
+}
+
+cite {
+  display: block;
+  text-align: right;
+  font-family: Verdana, Arial, sans-serif;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  font-style: normal;
+}
+
+blockquote q {
+  font-family: Georgia, serif;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+}
+
+blockquote q span {
+  will-change: opacity, filter;
+  opacity: 0;
+  filter: blur(0px);
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+q:before {
+  content: open-quote;
+  margin-right: 0.8rem;
+}
+
+q:after {
+  content: close-quote;
+}
+
+q:before, q:after {
+  color: #ccc;
+  font-size: 4rem;
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 400px) {
+  .q {
+    font-size: 48px /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+  </style>
+</head>
+<body>
+
+<blockquote contenteditable="flase" class="blockquote"><q>Hey, your offline ! <br> we can't really do anything offline sooo .... yeah </q>
+  <cite>Thisas</cite>
+</blockquote>
+    
+
+</body>
+</html>

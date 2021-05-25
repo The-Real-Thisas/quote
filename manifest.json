@@ -1,5 +1,7 @@
 {
- "name": "App",
+ "short_name": "Quotes",
+ "name": "Quotes | Just Quotes",
+ "description": "Some of the most famous quotes, with a tap.",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
@@ -37,5 +39,9 @@
    "type": "image\/png",
    "density": "4.0"
   }
- ]
+ ],
+ "start_url": "/quote/",
+ "background_color": "#ffffff",
+ "display": "standalone",
+ "theme_color": "#ffffff"
 }
